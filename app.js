@@ -41,13 +41,13 @@ function sortearAmigo() {
         return;
     }
 
-    // Gerar um índice aleatório
+    // Gera um índice aleatório
     let indiceSorteado = Math.floor(Math.random() * listaDeAmigos.length);
 
-    // Obter o nome sorteado
+    // Obtem o nome sorteado
     let amigoSorteado = listaDeAmigos[indiceSorteado];
 
-    // Exibir o resultado no HTML
+    // Exibe o resultado no HTML
     let resultadoElemento = document.getElementById('resultado');
     resultadoElemento.innerHTML = `O amigo sorteado é: ${amigoSorteado}`;
 }
