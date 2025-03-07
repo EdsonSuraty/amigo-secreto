@@ -8,14 +8,16 @@ function adicionarAmigo(){
     
     if (amigo === ""){
         alert('É necessário escrever um nome!!')
+        console.log('Entrada inválida. Nenhum amigo adicionado');
+    } else if (listaDeAmigos.includes(amigo)) {
+        alert('Esse nome já foi adicionado!');
+        console.log('Entrada repetida. Nenhum amigo adicionado')
     } else {
         listaDeAmigos.push(amigo);
+        console.log(`Amigo ${amigo} adicionado`);
+        console.log(listaDeAmigos)
     }
-
     limparCampo();
-
-    console.log(`Amigo ${amigo} adicionado`);
-    console.log(listaDeAmigos)
 }
 
 function limparCampo(){
